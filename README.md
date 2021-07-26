@@ -1,2 +1,0 @@
-# jokes
-Joker Scripts
