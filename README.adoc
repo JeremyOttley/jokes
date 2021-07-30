@@ -1,4 +1,5 @@
 = jokes
-Joker Scripts
+
+My collection of Joker scripts
 
 https://joker-lang.org[Joker-lang]
