@@ -1,0 +1,7 @@
+(ns system)
+
+(defn dir2vec [input]
+  (as-> input dir
+    (joker.os/ls dir)
+    (map :name dir)
+    (into [] dir)))
