@@ -1,0 +1,16 @@
+(require '[joker.http :as http]
+         '[joker.json :as json])
+
+(defn request-map [url]
+  {:method :get 
+   :url    url})
+
+(defn grabJsonData [url]
+  (json/read-string 
+    (:body (joker.http/send (request-map url))) {:keywords? true}))
+    
+ # (grabJsonData "http://character.totalpartykill.ca/basic/json/")
+
+
+    
+
