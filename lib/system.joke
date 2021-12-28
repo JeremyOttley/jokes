@@ -1,6 +1,9 @@
 (ns system)
 
-(defn dir2vec [input]
+(def homeDir (joker.os/get-env "HOME"))
+(def currentUser (joker.os/get-env "USER"))
+
+(defn dir-to-vec [input]
   (as-> input dir
     (joker.os/ls dir)
     (map :name dir)
