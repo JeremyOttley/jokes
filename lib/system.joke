@@ -1,6 +1,6 @@
 (ns system)
 
-(def homeDir (joker.os/get-env "HOME"))
+(def homeDir (joker.os/user-home-dir))
 (def currentUser (joker.os/get-env "USER"))
 
 (defn dir-to-vec [input]
